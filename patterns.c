@@ -14,6 +14,7 @@ int main(void)
   {
     if (second_text[i] == first_text[i])
     {
+      printf("Essa e a letra:\n");
     }
   }
   return 0;
