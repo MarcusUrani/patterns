@@ -23,7 +23,7 @@ int main(void)
     }
     if (equal)
     {
-      printf("%d", i);
+      printf("%d ", i);
     }
   }
   printf("\n");
