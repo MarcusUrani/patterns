@@ -10,12 +10,22 @@ int main(void)
   fgets(second_text, 102, stdin);
   int first_size = strlen(first_text) - 1;
   int second_size = strlen(second_text) - 1;
-  for (i = 0; i <= second_size - first_size; i++)
+  for (i = 0; i <= first_size - second_size; i++)
   {
-    if (second_text[i] == first_text[i])
+    int equal = 1;
+    for (j = 0; j < first_size; j++)
     {
-      printf("Essa eh a letra:\n");
+      if (first_text[i + j] != second_text[j])
+      {
+        equal = 0;
+        break;
+      }
+    }
+    if (equal)
+    {
+      printf("%d", i);
     }
   }
+  printf("\n");
   return 0;
 }
