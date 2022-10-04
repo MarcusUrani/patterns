@@ -13,7 +13,7 @@ int main(void)
   for (i = 0; i <= first_size - second_size; i++)
   {
     int equal = 1;
-    for (j = 0; j < first_size; j++)
+    for (j = 0; j < second_size; j++)
     {
       if (first_text[i + j] != second_text[j])
       {
